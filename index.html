@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+    <script src = "gsap.min.js" defer></script>
+    <script src = "Draggable.min.js" defer></script>
+    <script src = "InertiaPlugin.min.js" defer></script>
+    <script src = "app.js" defer></script>
+
+    <style>
+        .gallery {opacity: 0;}
+    </style>
+</head>
+<body>
+    <h1 class="header">a dream or a goal ?<span> wait until we're done. </span></h1>
+    <div class="gallery">
+        <div class="gallery__item"><img src="create-draggable-site/img/1.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/2.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/3.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/4.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/5.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/6.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/7.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/8.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/9.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/10.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/11.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/12.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/13.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/14.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/15.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/16.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/17.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/18.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/19.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/20.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/1.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/2.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/3.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/4.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/5.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/6.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/7.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/8.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/9.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/10.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/11.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/12.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/13.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/14.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/15.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/16.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/17.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/18.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/19.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/20.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/1.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/2.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/3.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/4.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/5.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/6.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/7.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/8.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/9.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/10.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/11.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/12.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/13.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/14.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/15.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/16.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/17.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/18.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/19.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/20.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/1.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/2.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/3.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/4.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/5.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/6.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/7.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/8.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/9.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/10.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/11.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/12.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/13.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/14.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/15.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/16.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/17.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/18.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/19.jpg" alt=""></div>
+        <div class="gallery__item"><img src="create-draggable-site/img/20.jpg" alt=""></div>
+    </div>
+
+</body>
+</html>
